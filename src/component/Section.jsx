@@ -14,7 +14,7 @@ import {
   GiMountainCave,
   GiVillage,
 } from "react-icons/gi";
-import { polly, amazingPools, amazingViews } from './data';
+import { polly, amazingPools, amazingViews, farms, tree, tow, omg, beach, lake, tiny, cabin, mountain, country } from './data';
 
 const Section = () => {
   const icons = [
@@ -29,7 +29,7 @@ const Section = () => {
     { icon: <GiSurferVan />, label: "Lakefront" },
     { icon: <GiFarmTractor />, label: "Tiny homes" },
     { icon: <GiCampingTent />, label: "Cabins" },
-    { icon: <GiMountainCave />, label: "Mountain caves" },
+    { icon: <GiMountainCave />, label: "Mountains" },
     { icon: <GiVillage />, label: "Countryside" },
   ];
 
@@ -37,6 +37,16 @@ const Section = () => {
     "Icons": polly,
     "Amazing pools": amazingPools,
     "Amazing views": amazingViews,
+    "Farms": farms,
+    "Treehouses": tree,
+    "Top of the World": tow,
+    "OMG!":omg,
+    "Beachfront": beach,
+    "Lakefront" :lake,
+    "Tiny homes":tiny,
+    "Cabins":cabin,
+    "Mountains":mountain,
+    "Countryside":country,
   };
 
   const [selectedContent, setSelectedContent] = useState(polly);
