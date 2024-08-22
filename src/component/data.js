@@ -14,6 +14,13 @@ import Core from "../assets/Core.webp"
 import Barbie from "../assets/Barbie.webp"
 import Khaby from "../assets/Khaby.webp"
 import Holiday from "../assets/Holiday.jpeg"
+import Block from "../assets/Blockbuster.webp"
+import Chennai from "../assets/chennai.webp"
+import Bengaluru from "../assets/Bengaluru.webp"
+import Thottumugham from "../assets/Thottumugham.webp"
+import Melapura from "../assets/Melapura.webp"
+import Crash from "../assets/Crash.webp"
+import Tour from "../assets/Crash.webp"
 
 
 
@@ -129,42 +136,107 @@ export const polly = [
     
 ];
 
-// export const pools = [
-//     {
-//         title:"Chennai, India",
-//         host:"26 Kilometeres away",
-//         date:"6-11 Sep",
-//         image: Pocket
-//     },
-//     {
-//         title:"Melapura, India",
-//         host:"392 Kilometres away",
-//         date:"25-30 Aug",
-//         image: Pocket
-//     },
-//     {
-//         title:"Thottumugham, India",
-//         host:"537 Kilometres away",
-//         date:"27 Aug-1 Sep",
-//         image: Pocket
-//     },
-//     {
-//         title:"Sleepover at Polly Pocket's Compact",
-//         host:"283 Kilometres away",
-//         date:"13-18 Sep",
-//         image: Pocket
-//     },
-//     {
-//         title:"Sleepover at Polly Pocket's Compact",
-//         host:"283 Kilometres away",
-//         date:"13-18 Sep",
-//         image: Pocket
-//     },
-//     {
-//         title:"Sleepover at Polly Pocket's Compact",
-//         host:"283 Kilometres away",
-//         date:"13-18 Sep",
-//         image: Pocket
-//     },
+export const amazingPools = [
+    {
+        title:"Chennai, India",
+        host:"26 Kilometeres away",
+        date:"6-11 Sep",
+        image: Chennai
+    },
+    {
+        title:"Melapura, India",
+        host:"392 Kilometres away",
+        date:"25-30 Aug",
+        image: Melapura
+    },
+    {
+        title:"Thottumugham, India",
+        host:"537 Kilometres away",
+        date:"27 Aug-1 Sep",
+        image: Thottumugham
+    },
+    {
+        title:"Bengaluru, India",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Bengaluru
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Block
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Crash
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Bengaluru
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Chennai
+    },
     
-// ];
+];
+
+export const amazingViews = [
+    {
+        title:"Chennai, India",
+        host:"26 Kilometeres away",
+        date:"6-11 Sep",
+        image: Melapura
+    },
+    {
+        title:"Melapura, India",
+        host:"392 Kilometres away",
+        date:"25-30 Aug",
+        image:  Muse
+    },
+    {
+        title:"Thottumugham, India",
+        host:"537 Kilometres away",
+        date:"27 Aug-1 Sep",
+        image: Tour
+    },
+    {
+        title:"Bangalore",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Swamp
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Pocket
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Supersuit
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Swamp
+    },
+    {
+        title:"Sleepover at Polly Pocket's Compact",
+        host:"283 Kilometres away",
+        date:"13-18 Sep",
+        image: Xmen
+        
+    },
+    
+];

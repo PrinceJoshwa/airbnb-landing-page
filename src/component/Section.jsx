@@ -14,7 +14,7 @@ import {
   GiMountainCave,
   GiVillage,
 } from "react-icons/gi";
-import { polly } from './data';
+import { polly, amazingPools, amazingViews } from './data';
 
 const Section = () => {
   const icons = [
@@ -33,13 +33,17 @@ const Section = () => {
     { icon: <GiVillage />, label: "Countryside" },
   ];
 
+  const contentMap = {
+    "Icons": polly,
+    "Amazing pools": amazingPools,
+    "Amazing views": amazingViews,
+  };
+
   const [selectedContent, setSelectedContent] = useState(polly);
   const [activeIcon, setActiveIcon] = useState("Icons");
 
   const handleIconClick = (label) => {
-    if (label === "Icons") {
-      setSelectedContent(polly);
-    }
+    setSelectedContent(contentMap[label] || polly);
     setActiveIcon(label);
   };
 
@@ -58,7 +62,7 @@ const Section = () => {
               onClick={() => handleIconClick(item.label)}
             >
               <span className="text-3xl">{item.icon}</span>
-              <p className="text-center mt-2 text-[12px]">
+              <p className="text-left mt-2 text-[12px]">
                 {item.label}
               </p>
             </div>
@@ -67,18 +71,18 @@ const Section = () => {
       </div>
 
       <div className="pt-4 px-4">
-        <div className=" grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-4 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {selectedContent.map((shop, index) => (
-            <div key={index} className="flex flex-col items-center">
+            <div key={index} className="flex flex-col items-left">
               <img
                 src={shop.image}
                 alt={shop.title}
-                className="w-80 h-72 object-cover mb-2 rounded-xl"
+                className="w-72 h-72 object-cover mb-2 rounded-xl"
               />
               <div className="text-left">
-                <p className="text-black text-lg">{shop.title}</p>
-                <p className="text-gray-500 text-lg">{shop.host}</p>
-                <p className="text-black text-sm">{shop.date}</p>
+                <p className="text-black text-lg ">{shop.title}</p>
+                <p className="text-gray-500 text-lg ">{shop.host}</p>
+                <p className="text-black text-sm ">{shop.date}</p>
               </div>
             </div>
           ))}
