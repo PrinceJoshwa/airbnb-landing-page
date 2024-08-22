@@ -29,7 +29,7 @@ const Section = () => {
     { icon: <GiSurferVan />, label: "Lakefront" },
     { icon: <GiFarmTractor />, label: "Tiny homes" },
     { icon: <GiCampingTent />, label: "Cabins" },
-    { icon: <GiMountainCave />, label: "Mountains" },
+    { icon: <GiMountainCave />, label: "Mountains Cave" },
     { icon: <GiVillage />, label: "Countryside" },
   ];
 
@@ -45,7 +45,7 @@ const Section = () => {
     "Lakefront" :lake,
     "Tiny homes":tiny,
     "Cabins":cabin,
-    "Mountains":mountain,
+    "Mountains Cave":mountain,
     "Countryside":country,
   };
 
@@ -72,7 +72,7 @@ const Section = () => {
               onClick={() => handleIconClick(item.label)}
             >
               <span className="text-3xl">{item.icon}</span>
-              <p className="text-left mt-2 text-[12px]">
+              <p className="text-center mt-2 text-[12px]">
                 {item.label}
               </p>
             </div>
